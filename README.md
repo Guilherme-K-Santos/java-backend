@@ -16,9 +16,9 @@ de config para evitar problemas com a CORS Policy!
 
 # Versões
 
-mySQL - 8.0.36
-Java - 22.0.1
-Springboot - 3.2.5
+- mySQL: 8.0.36
+- Java: 22.0.1
+- Springboot: 3.2.5
 
 Também usei Postman (3.2.5) para testar os endpoints da API.
 
