@@ -21,3 +21,12 @@ Java - 22.0.1
 Springboot - 3.2.5
 
 Também usei Postman (3.2.5) para testar os endpoints da API.
+
+# Rodando com Frontend & mySQL
+O frontend consumirá as API providas pelo springboot nos métodos GET e POST (Deixei tudo pronto para a CORS Policy não ser um problema).
+
+Além disso, O banco de dados mySQL deve ser configurado para a integração ser bem sucedida. Porém, apenas duas linhas devem ser alteradas para tudo fluir:
+- Altere 'bridge_webapp' com o nome da sua base de dados criada (cheque a porta do localhost tbb)
+`spring.datasource.url=jdbc:mysql://localhost:3306/bridge_webapp?useSSL=false`
+- Coloque a sua senha da base de dados mySQL no lugar de 'heracross2024' (o melhor pokemon tipo inseto) abaixo:
+`spring.datasource.password=heracross2024`
