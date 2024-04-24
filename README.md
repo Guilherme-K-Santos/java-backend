@@ -23,10 +23,12 @@ de config para evitar problemas com a CORS Policy!
 Também usei Postman (3.2.5) para testar os endpoints da API.
 
 # Rodando com Frontend & mySQL
-O frontend consumirá as API providas pelo springboot nos métodos GET e POST (Deixei tudo pronto para a CORS Policy não ser um problema).
+O frontend consumirá as API providas pelo springboot nos métodos GET e POST (Deixei tudo pronto para a CORS Policy não ser um problema). O deployment do backend no Heroku (a URL pode ser encontrada no código do frontend). 
 
-Além disso, O banco de dados mySQL deve ser configurado para a integração ser bem sucedida. Porém, apenas duas linhas devem ser alteradas para tudo fluir:
-- Altere 'bridge_webapp' com o nome da sua base de dados criada (cheque a porta do localhost tbb)
-`spring.datasource.url=jdbc:mysql://localhost:3306/bridge_webapp?useSSL=false`
-- Coloque a sua senha da base de dados mySQL no lugar de 'heracross2024' (o melhor pokemon tipo inseto) abaixo:
-`spring.datasource.password=heracross2024`
+Além disso, caso queiram testar o backend fora do deployment: o banco de dados mySQL deve ser configurado para a integração ser bem sucedida. Porém, apenas duas linhas devem ser alteradas para tudo fluir:
+- Altere a URL abaixo com a dada pela database:
+`spring.datasource.url=jdbc:mysql://hvmc3rvol5xg4vqe:vr6rqdzzd5x1xfw8@dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/p4u45vixwc7mcf7a`
+- Coloque o username da base de dados mySQL no lugar de 'hvmc3rvol5xg4vqe' abaixo:
+`spring.datasource.username=hvmc3rvol5xg4vqe`
+- Coloque a sua senha da base de dados mySQL no lugar de 'vr6rqdzzd5x1xfw8' abaixo:
+`spring.datasource.password=vr6rqdzzd5x1xfw8`
